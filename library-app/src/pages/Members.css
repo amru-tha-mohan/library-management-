@@ -1,0 +1,94 @@
+.members-page{
+  padding:30px;
+  background:#f5f7fb;
+  min-height:100vh;
+}
+
+.members-page h1{
+  color:#4f46e5;
+  margin-bottom:20px;
+}
+
+.member-search{
+  width:100%;
+  padding:15px;
+  border:none;
+  border-radius:12px;
+  margin-bottom:25px;
+  box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.members-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.member-card{
+  background:white;
+  padding:25px;
+  border-radius:20px;
+  box-shadow:0 10px 25px rgba(0,0,0,.1);
+  transition:.3s;
+}
+
+.member-card:hover{
+  transform:translateY(-10px);
+}
+
+.active{
+  background:#dcfce7;
+  color:green;
+  padding:6px 12px;
+  border-radius:20px;
+}
+
+.inactive{
+  background:#fee2e2;
+  color:red;
+  padding:6px 12px;
+  border-radius:20px;
+}
+
+.back-btn{
+  background:#4f46e5;
+  color:white;
+  border:none;
+  padding:10px 20px;
+  border-radius:10px;
+  cursor:pointer;
+  margin-bottom:20px;
+}
+.member-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.edit-btn {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+.edit-btn:hover {
+  background: #1d4ed8;
+}
+
+.delete-btn {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #ef4444;
+  color: white;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #dc2626;
+}

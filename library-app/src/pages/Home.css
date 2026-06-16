@@ -1,0 +1,284 @@
+/* Background */
+
+.home {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      rgba(10, 15, 30, 0.75),
+      rgba(10, 15, 30, 0.75)
+    ),
+    url("https://images.unsplash.com/photo-1507842217343-583bb7270b66");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Glass Card */
+
+.hero-card {
+  width: 750px;
+  padding: 60px;
+  text-align: center;
+  border-radius: 35px;
+
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(18px);
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.5),
+    0 0 40px rgba(123, 97, 255, 0.35);
+
+  color: white;
+  z-index: 10;
+
+  animation: fadeUp 1s ease;
+}
+
+/* Title */
+
+.title {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #8b5cf6,
+      #3b82f6,
+      #06b6d4
+    );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: slideDown 1s ease;
+}
+
+/* Subtitle */
+
+.subtitle {
+  font-size: 1.7rem;
+  color: #e0d9ff;
+  margin-bottom: 25px;
+}
+
+.hero-card p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #f3f4f6;
+}
+
+/* Button */
+
+.hero-btn {
+  margin-top: 35px;
+  padding: 18px 45px;
+  border: none;
+  border-radius: 50px;
+
+  background:
+    linear-gradient(
+      45deg,
+      #6c63ff,
+      #9b59ff
+    );
+
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: 0.4s;
+
+  box-shadow:
+    0 0 25px rgba(139, 92, 246, 0.5);
+}
+
+.hero-btn:hover {
+  transform:
+    translateY(-5px)
+    scale(1.05);
+
+  box-shadow:
+    0 0 45px rgba(139, 92, 246, 0.9);
+}
+
+/* Floating Books */
+
+.floating {
+  position: absolute;
+  font-size: 55px;
+  opacity: 0.9;
+  animation: float 6s ease-in-out infinite;
+}
+
+.b1 {
+  top: 10%;
+  left: 10%;
+}
+
+.b2 {
+  top: 18%;
+  right: 12%;
+  animation-delay: 1s;
+}
+
+.b3 {
+  bottom: 18%;
+  left: 12%;
+  animation-delay: 2s;
+}
+
+.b4 {
+  bottom: 12%;
+  right: 10%;
+  animation-delay: 3s;
+}
+
+.b5 {
+  top: 55%;
+  left: 8%;
+  animation-delay: 4s;
+}
+
+/* Twinkling Stars */
+
+.star {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: white;
+  border-radius: 50%;
+  animation: twinkle 4s infinite;
+}
+
+.s1 {
+  top: 15%;
+  left: 35%;
+}
+
+.s2 {
+  top: 25%;
+  right: 30%;
+}
+
+.s3 {
+  bottom: 25%;
+  left: 25%;
+}
+
+.s4 {
+  bottom: 20%;
+  right: 20%;
+}
+
+.s5 {
+  top: 50%;
+  right: 40%;
+}
+
+/* Statistics */
+
+.stats {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.stat-card {
+  width: 180px;
+  padding: 20px;
+  border-radius: 20px;
+
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  color: white;
+
+  transition: 0.4s;
+}
+
+.stat-card:hover {
+  transform: translateY(-10px);
+
+  box-shadow:
+    0 0 25px rgba(123, 97, 255, 0.5);
+}
+
+.stat-card h2 {
+  font-size: 2rem;
+  color: #a78bfa;
+}
+
+.stat-card p {
+  margin-top: 10px;
+  color: #e5e7eb;
+}
+
+/* Animations */
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform:
+      translateY(0)
+      rotate(0deg);
+  }
+
+  50% {
+    transform:
+      translateY(-35px)
+      rotate(10deg);
+  }
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.2;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.8);
+  }
+}

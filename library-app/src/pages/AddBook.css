@@ -1,0 +1,70 @@
+.addbook-container{
+  display:flex;
+  min-height:100vh;
+  background:#f4f7fc;
+}
+
+.addbook-left{
+  flex:1;
+  background:linear-gradient(135deg,#4f46e5,#7c3aed);
+  color:white;
+  padding:50px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+
+.addbook-left h1{
+  font-size:3rem;
+  margin-bottom:20px;
+}
+
+.addbook-left p{
+  text-align:center;
+  max-width:400px;
+}
+
+.addbook-left img{
+  width:300px;
+  margin-top:30px;
+}
+
+.addbook-right{
+  flex:1;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.addbook-right form{
+  width:450px;
+  background:white;
+  padding:40px;
+  border-radius:25px;
+  box-shadow:0 10px 30px rgba(0,0,0,.1);
+}
+
+.addbook-right input,
+.addbook-right select{
+  width:100%;
+  padding:15px;
+  margin-bottom:15px;
+  border:1px solid #ddd;
+  border-radius:12px;
+}
+
+.addbook-right button{
+  width:100%;
+  padding:15px;
+  border:none;
+  border-radius:12px;
+  background:linear-gradient(135deg,#4f46e5,#7c3aed);
+  color:white;
+  font-size:16px;
+  cursor:pointer;
+}
+
+.addbook-right button:hover{
+  transform:scale(1.03);
+}

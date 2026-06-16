@@ -1,0 +1,67 @@
+.light {
+  background: white;
+  color: black;
+}
+
+.dark {
+  background: #0f172a;
+  color: white;
+}
+
+/* make cards adapt */
+.dark .card {
+  background: #1e293b;
+  color: white;
+}
+
+.dark .sidebar {
+  background: #0b1220;
+}
+body.dark {
+  background: #0f172a;
+  color: white;
+}
+
+body.dark .settings-card {
+  background: #1e293b;
+  color: white;
+}
+
+body.dark .settings-btn,
+body.dark .toggle-btn {
+  background: #334155;
+  color: white;
+}
+body.dark {
+  background-color: #121212;
+  color: white;
+}
+
+body.dark .dashboard-container,
+body.dark .books-page,
+body.dark .members-page,
+body.dark .returns-page,
+body.dark .settings-page {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+body.dark .sidebar {
+  background-color: #0f172a;
+}
+
+body.dark .stat-card,
+body.dark .book-card,
+body.dark .member-card,
+body.dark .return-card,
+body.dark .settings-card {
+  background-color: #2a2a2a;
+  color: white;
+}
+
+body.dark input,
+body.dark textarea {
+  background-color: #333;
+  color: white;
+  border: 1px solid #555;
+}
