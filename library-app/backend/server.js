@@ -10,11 +10,13 @@ const memberRoutes = require("./routes/memberRoutes");
 const authRoutes = require("./routes/authRoutes");
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: [
+      "http://localhost:5173",
+      "https://library-management-tau-olive.vercel.app",
+    ],
     credentials: true,
   })
 );
-
 app.use(express.json());
 
 app.use("/api/books", bookRoutes);
