@@ -12,8 +12,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://library-management-tau-olive.vercel.app",
-      "https://library-management-git-main-amru-tha-mohans-projects.vercel.app",
+      "https://library-management-frontend-7ykw.onrender.com",
     ],
     credentials: true,
   })
