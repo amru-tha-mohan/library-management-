@@ -13,6 +13,7 @@ app.use(
     origin: [
       "http://localhost:5173",
       "https://library-management-tau-olive.vercel.app",
+      "https://library-management-git-main-amru-tha-mohans-projects.vercel.app",
     ],
     credentials: true,
   })
